@@ -1,3 +1,5 @@
+import { BASE_PATH } from "@/lib/constants";
+
 export const portfolioData = {
     personalInfo: {
         name: "Ammar Mohammad",
@@ -25,14 +27,14 @@ export const portfolioData = {
             description: "Served as President (2015-2016), leading the student federation and organizing national symposiums and medical campaigns.",
             tags: ["Leadership", "Management", "Volunteering"],
             link: "#",
-            image: "/epsf groub image.jpg"
+            image: `${BASE_PATH}/epsf groub image.jpg`
         },
         {
             title: "Coordinator of Student Exchange",
             description: "International Pharmaceutical Students' Federation (IPSF) student exchange program in Egypt managed by Egyptian Pharmaceutical Students' Federation (EPSF).",
             tags: ["Coordination", "IPSF", "Education"],
             link: "#",
-            image: "/epsf i am taking image.jpg"
+            image: `${BASE_PATH}/epsf i am taking image.jpg`
         }
     ],
     experience: [

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import { VantaBackground } from "@/components/common/VantaBackground";
+import { BASE_PATH } from "@/lib/constants";
 
 export function Hero() {
     return (
@@ -61,7 +62,7 @@ export function Hero() {
                         <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                     </a>
                     <a
-                        href="/resume.pdf"
+                        href={`${BASE_PATH}/resume.pdf`}
                         className="group flex items-center gap-2 px-8 py-4 bg-white dark:bg-white/5 backdrop-blur-sm border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-full font-bold hover:bg-gray-50 dark:hover:bg-white/10 transition-all active:scale-95"
                     >
                         Download CV
