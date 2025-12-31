@@ -69,7 +69,7 @@ export function VantaBackground({ children }: { children: React.ReactNode }) {
                 }}
             />
 
-            <div ref={vantaRef} className="w-full h-full absolute inset-0 -z-10 bg-gray-50 dark:bg-black">
+            <div ref={vantaRef} className="fixed inset-0 -z-50 w-full h-full bg-gray-50 dark:bg-black pointer-events-none">
                 {children}
             </div>
         </>

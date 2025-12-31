@@ -5,6 +5,7 @@ import { Header } from "@/components/common/Header";
 import { Footer } from "@/components/common/Footer";
 import { PageTransition } from "@/components/common/PageTransition";
 import { ThemeProvider } from "@/components/common/theme-provider";
+import { VantaBackground } from "@/components/common/VantaBackground";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,8 +38,13 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          {/* Global Background */}
+          <VantaBackground>
+            <div className="absolute inset-0 bg-white/30 dark:bg-black/40" />
+          </VantaBackground>
+
           <Header />
-          <main className="flex-1 pt-20">
+          <main className="flex-1 pt-20 relative z-10">
             <PageTransition>
               {children}
             </PageTransition>

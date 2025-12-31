@@ -2,18 +2,12 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
-import { VantaBackground } from "@/components/common/VantaBackground";
 import { BASE_PATH } from "@/lib/constants";
 
 export function Hero() {
     return (
         <section className="min-h-[90vh] flex items-center justify-center relative overflow-hidden">
-            {/* Vanta.js Background */}
-            <VantaBackground>
-                {/* Optional overlay to ensure text readability */}
-                <div className="absolute inset-0 bg-white/30 dark:bg-black/40 pointer-events-none" />
-            </VantaBackground>
-
+            {/* Vanta.js Background is now global in layout.tsx */}
             <div className="container px-4 z-10 flex flex-col items-center text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
