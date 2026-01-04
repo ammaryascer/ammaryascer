@@ -2,83 +2,101 @@ import { BASE_PATH } from "@/lib/constants";
 
 export const portfolioData = {
     personalInfo: {
-        name: "Ammar Mohammad",
-        title: "Bilingual Medical Interpreter & Pharmacist",
-        bio: "Certified Arabic-English bilingual interpreter with extensive experience in telephonic and video medical interpretation. Background in clinical pharmacy with a proven track record in customer service for North American markets.",
+        name: "Ammar Yasser AbdAllah Mohammad",
+        title: "Licensed Pharmacist & Certified Medical Interpreter",
+        bio: "Licensed Pharmacist and Certified Medical Interpreter with interdisciplinary experience in healthcare delivery, public health initiatives, and cross-cultural medical communication.\n\nDemonstrated leadership in community-based public health programs, health promotion campaigns, and international student engagement, with a strong commitment to health equity, access to care, and evidence-based practice.\n\nExperienced in working across healthcare systems, multidisciplinary teams, and diverse populations, contributing to effective service delivery, informed decision-making, and improved patient and community outcomes.",
         email: "pharm.ammar.y@gmail.com",
-        phone: "+20 103 039 0303",
-        address: "Giza, Egypt",
-        linkedin: "https://linkedin.com/in/ammar-yasser", // Placeholder based on name
+        phone: "(+20) 1030390303",
+        address: "Sixth of October, Giza, Egypt",
+        whatsapp: "+201028115566",
+        nationality: "Egyptian",
+        dob: "01/01/1993",
+        website: "https://ammaryascer.github.io/protfolio/",
+        linkedin: "https://linkedin.com/in/ammar-yasser"
     },
     skills: [
-        "Medical Interpretation",
-        "English (Fluent)",
-        "Arabic (Native)",
-        "HIPAA Regulations",
-        "Customer Service",
-        "Video Remote Interpreting (VRI)",
-        "Clinical Pharmacy",
-        "Public Speaking",
-        "Negotiation"
+        "Medication Safety",
+        "Rational Drug Use",
+        "Patient Counseling",
+        "Strategic Planning",
+        "Stakeholder Engagement",
+        "Team Coordination",
+        "Community Health Promotion",
+        "Intercultural Communication",
+        "HIPAA Compliance",
+        "e-Health Technologies"
     ],
-    projects: [
+    education: [
         {
-            title: "EPSF Helwan University",
-            description: "Served as President (2015-2016), leading the student federation and organizing national symposiums and medical campaigns.",
-            tags: ["Leadership", "Management", "Volunteering"],
-            link: "#",
-            image: `${BASE_PATH}/epsf groub image.jpg`
+            degree: "Bachelor of Pharmacy (BPharm)",
+            institution: "Faculty of Pharmacy, Capital University (Previously: Helwan University)",
+            year: "",
+            description: [
+                "Comprehensive training in pharmaceutical sciences, pharmacology, toxicology, and biomedical sciences.",
+                "Foundations in clinical pharmacy, pharmacotherapy, and pharmacy practice.",
+                "Knowledge of quality assurance, Good Manufacturing Practice (GMP), and pharmaceutical regulations."
+            ]
         },
         {
-            title: "Coordinator of Student Exchange",
-            description: "International Pharmaceutical Students' Federation (IPSF) student exchange program in Egypt managed by Egyptian Pharmaceutical Students' Federation (EPSF).",
-            tags: ["Coordination", "IPSF", "Education"],
-            link: "#",
-            image: `${BASE_PATH}/epsf i am taking image.jpg`
+            degree: "Credential Evaluation",
+            institution: "World Education Services (WES)",
+            year: "05/11/2025",
+            description: "Bachelor of Pharmacy degree evaluated and determined to be equivalent to a Canadian four-year Bachelor’s degree."
         }
     ],
     experience: [
         {
-            role: "Medical Interpreter (TI/VRI)",
-            company: "GLOBO",
-            period: "Sept 2024 - Present",
-            description: "Providing high-quality telephonic and video interpretation for medical providers and patients."
+            role: "Pharmacy Manager",
+            company: "Magdy Abdeen Pharmacy",
+            period: "01/01/2024 - Current",
+            description: [
+                "Managed end-to-end community pharmacy operations, ensuring continuous service delivery and regulatory compliance.",
+                "Oversaw safe medication dispensing and pharmacy staff performance, providing patient counseling and health education.",
+                "Applied principles of medication safety, ethical practice, healthcare management, and continuous service improvement."
+            ]
         },
         {
-            role: "Medical Interpreter",
-            company: "LanguageLine Solutions",
-            period: "Jan 2022 - Dec 2024",
-            description: "Completed 2000+ hours of interpretation across various industries, adhering strictly to HIPAA and professional standards."
+            role: "Remote Medical Interpreter (English–Arabic)",
+            company: "GLOBO Language Solutions, LLC",
+            period: "01/07/2022 - Current",
+            description: [
+                "Provided remote medical interpretation services enabling effective communication between LEP patients and providers.",
+                "Delivered accurate and bilingual medical interpretation while adhering to clinical terminology standards.",
+                "Maintained strict privacy, ethical conduct, and regulatory compliance (HIPAA)."
+            ]
         },
         {
-            role: "Community Pharmacist",
-            company: "Various Pharmacies (MG, Medhat, 19011)",
-            period: "2015 - 2021",
-            description: "Managed patient counseling, prescription dispensing, and pharmacy operations across Cairo."
+            role: "National and Local Officer",
+            company: "Egyptian Pharmaceutical Students' Federation (EPSF)",
+            period: "2013 - 2016",
+            description: [
+                "Held multiple senior leadership positions culminating in President of EPSF Helwan.",
+                "Led and implemented public health initiatives including national blood donation activities.",
+                "Actively contributed to the Student Exchange Program (SEP) and promoted intercultural communication.",
+                "Represented EPSF in national and international events."
+            ]
+        }
+    ],
+    projects: [
+        {
+            title: "Public Health Awareness Campaigns",
+            description: "Led and implemented community-based campaigns (blood donation, hepatitis, breast cancer) improving health literacy.",
+            tags: ["Public Health", "Leadership", "Volunteering"],
+            link: "#",
+            image: `${BASE_PATH}/epsf groub image.jpg`
         },
         {
-            role: "Travel Advisor",
-            company: "Expedia",
-            period: "2016 - 2020",
-            description: "Provided exceptional customer service and travel solutions for the Canadian and US markets."
+            title: "Student Exchange Program",
+            description: "Coordinated exchange activities, supporting incoming international students and promoting intercultural mobility.",
+            tags: ["Exchange", "Education", "Culture"],
+            link: "#",
+            image: `${BASE_PATH}/epsf i am taking image.jpg`
         }
     ],
     qualifications: [
-        { year: "2019", title: "Super Pharmacist Workshop (OTC & communication skills)", issuer: "19011 Pharmacies Academy, Helwan University" },
-        { year: "2019", title: "Nuclear Pharmacy Workshop", issuer: "Helwan University, Faculty of Pharmacy" },
-        { year: "2019", title: "Marketing & Sales Representatives training", issuer: "Multi-APEX Pharmaceuticals" },
-        { year: "2019", title: "Practical Emergency First-Aids training", issuer: "Al Haram Hospital" },
-        { year: "2019", title: "STEP ON THE WAY scientific course", issuer: "EPSF, Cairo University" },
-        { year: "2018", title: "EPSF 17th NATIONAL SYMPOSIUM", issuer: "Mansoura University" },
-        { year: "2017", title: "EPSF 16th NATIONAL SYMPOSIUM", issuer: "Tanta University" },
-        { year: "2016", title: "EPSF 22nd NATIONAL CONGRESS", issuer: "MUST University" },
-        { year: "2016", title: "The 5th Eastern Mediterranean Pharmaceutical Symposium", issuer: "IPSF" },
-        { year: "2016", title: "EPSF 15th NATIONAL SYMPOSIUM", issuer: "Assiut University" },
-        { year: "2015", title: "EPSF 21st NATIONAL CONGRESS", issuer: "Delta University" },
-        { year: "2015", title: "LEADERS IN TRAINING program", issuer: "EPSF" },
-        { year: "2015", title: "ACHIEVE BRIGHT CAREER conference", issuer: "AUC" },
-        { year: "2014", title: "Full FIRST AIDS course", issuer: "Giza Pharmacists' Syndicate" },
-        { year: "2013-2015", title: "SCIENCE OF FUTURE conference", issuer: "Faculty of Pharmacy, ASU" }
+        { year: "Active", title: "Eastern Mediterranean Pharmaceutical Symposium (EMPS)", issuer: "Organizer/Participant" },
+        { year: "Annual", title: "National Congresses & Symposia", issuer: "EPSF" },
+        { year: "Various", title: "Step on the Way & 3D of Science", issuer: "Scientific Initiatives" }
     ],
     testimonials: [
         {
@@ -105,13 +123,13 @@ export const portfolioData = {
             language: "Arabic",
             proficiency: "Native",
             level: 100,
-            description: "Medical & General (Native)"
+            description: "Mother Tongue"
         },
         {
             language: "English",
-            proficiency: "Fluent",
+            proficiency: "Proficient (C2)",
             level: 95,
-            description: "Medical Terminology Specialist"
+            description: "Listening: C2, Reading: C2, Spoken: C2"
         }
     ]
 };

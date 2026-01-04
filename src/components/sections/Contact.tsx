@@ -1,7 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, MapPin } from "lucide-react";
+import { portfolioData } from "@/data/portfolio";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 export function Contact() {
     return (
@@ -23,18 +24,25 @@ export function Contact() {
                         Let's collaborate to ensure clear and accurate communication.
                     </p>
 
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-6 relative z-10">
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-4 relative z-10 flex-wrap">
                         <a
-                            href="mailto:pharm.ammar.y@gmail.com"
+                            href={`mailto:${portfolioData.personalInfo.email}`}
                             className="flex items-center gap-2 px-8 py-4 bg-white text-blue-600 rounded-full font-bold hover:bg-gray-100 transition shadow-lg active:scale-95"
                         >
                             <Mail size={20} />
-                            Contact Me
+                            Email Me
                         </a>
-                        <div className="flex items-center gap-2 text-blue-100">
-                            <MapPin size={20} />
-                            <span>Giza, Egypt / Remote</span>
-                        </div>
+                        <a
+                            href={`https://wa.me/${portfolioData.personalInfo.whatsapp.replace(/\+/g, '').replace(/\s/g, '')}`}
+                            className="flex items-center gap-2 px-8 py-4 bg-green-500 text-white rounded-full font-bold hover:bg-green-600 transition shadow-lg active:scale-95"
+                        >
+                            <Phone size={20} />
+                            WhatsApp
+                        </a>
+                    </div>
+                    <div className="flex items-center justify-center gap-2 text-blue-100 mt-6 relative z-10">
+                        <MapPin size={20} />
+                        <span>{portfolioData.personalInfo.address}</span>
                     </div>
                 </motion.div>
             </div>

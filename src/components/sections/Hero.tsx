@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Download } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
 
+import { portfolioData } from "@/data/portfolio";
+
 export function Hero() {
     return (
         <section className="min-h-[90vh] flex items-center justify-center relative overflow-hidden">
@@ -16,7 +18,7 @@ export function Hero() {
                 >
                     <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-blue-600 uppercase bg-white/50 dark:bg-white/5 border border-blue-100 dark:border-blue-900/30 backdrop-blur-sm rounded-full shadow-sm">
                         <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-                        Certified Medical Interpreter
+                        {portfolioData.personalInfo.title}
                     </div>
                 </motion.div>
 
@@ -39,7 +41,7 @@ export function Hero() {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mb-10 leading-relaxed"
                 >
-                    Professional Arabic-English Medical Interpreter & Pharmacist dedicated to facilitating clear communication and ensuring patient safety in healthcare settings.
+                    {portfolioData.personalInfo.bio.split(".")[0]}.
                 </motion.p>
 
                 <motion.div

@@ -10,7 +10,7 @@ export function Qualifications() {
         <section id="qualifications" className="py-20">
             <div className="container mx-auto px-4 max-w-5xl">
                 <SectionReveal>
-                    <h2 className="text-3xl font-bold mb-12 text-center">Qualifications & Activities</h2>
+                    <h2 className="text-3xl font-bold mb-12 text-center">Conferences & Seminars</h2>
                 </SectionReveal>
 
                 <div className="grid md:grid-cols-2 gap-6">

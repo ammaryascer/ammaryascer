@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { BASE_PATH } from "@/lib/constants";
+import { portfolioData } from "@/data/portfolio";
 
 export function About() {
     return (
@@ -20,24 +21,15 @@ export function About() {
                         <div className="w-64 h-64 shrink-0 relative rotate-3 hover:rotate-0 transition-transform duration-300">
                             <img
                                 src={`${BASE_PATH}/avatar.png?v=3`}
-                                alt="Ammar Mohammad"
+                                alt={portfolioData.personalInfo.name}
                                 className="w-full h-full object-cover rounded-2xl shadow-lg border-4 border-white dark:border-zinc-800 transform transition-transform duration-500 hover:scale-105"
                             />
                         </div>
 
                         <div className="space-y-6 text-lg text-gray-600 dark:text-gray-200">
-                            <p>
-                                Hello! I'm Ammar, a certified Arabic-English medical interpreter and pharmacist. My unique background allows me to bridge the gap between medical terminology and patient understanding, ensuring accurate and empathetic communication.
-                            </p>
-                            <p>
-                                I have extensive experience working with
-                                <span className="text-blue-600 font-medium"> GLOBO</span>,
-                                <span className="text-blue-600 font-medium"> LanguageLine Solutions</span>, and as a
-                                <span className="text-blue-600 font-medium"> Pharmacist</span> in various community settings.
-                            </p>
-                            <p>
-                                Whether handling complex medical scenarios over the phone (OPI) or video (VRI), I bring a commitment to privacy (HIPAA compliant), precision, and cultural sensitivity to every interaction.
-                            </p>
+                            {portfolioData.personalInfo.bio.split('\n\n').map((paragraph, index) => (
+                                <p key={index}>{paragraph}</p>
+                            ))}
                         </div>
                     </div>
                 </motion.div>

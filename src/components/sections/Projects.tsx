@@ -11,7 +11,7 @@ export function Projects() {
         <section id="projects" className="py-20">
             <div className="container mx-auto px-4">
                 <SectionReveal>
-                    <h2 className="text-3xl font-bold mb-12 text-center">Activities</h2>
+                    <h2 className="text-3xl font-bold mb-12 text-center">Volunteering</h2>
                 </SectionReveal>
 
                 <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
