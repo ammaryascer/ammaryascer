@@ -18,6 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ammaryascer.github.io/protfolio"),
   title: "Ammar - Portfolio",
   description: "(Pharmacist & Dreamer)",
   openGraph: {
