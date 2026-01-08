@@ -19,7 +19,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Ammar - Portfolio",
-  description: "Full Stack Developer Portfolio",
+  description: "(Pharmacist & Dreamer)",
+  openGraph: {
+    title: "Ammar - Portfolio",
+    description: "(Pharmacist & Dreamer)",
+    images: ["/Ammar-P.P1x1-B.jpeg"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ammar - Portfolio",
+    description: "(Pharmacist & Dreamer)",
+    images: ["/Ammar-P.P1x1-B.jpeg"],
+  },
 };
 
 export default function RootLayout({
