@@ -81,7 +81,7 @@ export function Header() {
                     initial={{ opacity: 0, y: -20 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -20 }}
-                    className="absolute top-full left-0 right-0 bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800 p-4 md:hidden flex flex-col gap-4 shadow-lg"
+                    className="absolute top-full left-0 right-0 bg-white dark:bg-black border-t border-gray-200 dark:border-gray-800 p-4 md:hidden flex flex-col gap-4 shadow-lg max-h-[85vh] overflow-y-auto"
                 >
                     {navLinks.map((link) => (
                         <Link

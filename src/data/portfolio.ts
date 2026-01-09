@@ -3,7 +3,7 @@ import { BASE_PATH } from "@/lib/constants";
 export const portfolioData = {
     personalInfo: {
         name: "Ammar Yasser AbdAllah Mohammad",
-        title: "Licensed Pharmacist & Certified Medical Interpreter",
+        title: "Pharmacist | Medical Interpreter (EN–AR) | Community Health & Equity Advocate",
         bio: "Licensed Pharmacist and Certified Medical Interpreter with interdisciplinary experience in healthcare delivery, public health initiatives, and cross-cultural medical communication.\n\nDemonstrated leadership in community-based public health programs, health promotion campaigns, and international student engagement, with a strong commitment to health equity, access to care, and evidence-based practice.\n\nExperienced in working across healthcare systems, multidisciplinary teams, and diverse populations, contributing to effective service delivery, informed decision-making, and improved patient and community outcomes.",
         email: "pharm.ammar.y@gmail.com",
         phone: "(+20) 1030390303",

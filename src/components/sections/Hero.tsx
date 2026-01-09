@@ -1,70 +1,128 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight, Download, Quote } from "lucide-react";
 import { BASE_PATH } from "@/lib/constants";
 
 import { portfolioData } from "@/data/portfolio";
 
 export function Hero() {
     return (
-        <section className="min-h-[90vh] flex items-center justify-center relative overflow-hidden">
-            {/* Vanta.js Background is now global in layout.tsx */}
-            <div className="container px-4 z-10 flex flex-col items-center text-center">
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-blue-600 uppercase bg-white/50 dark:bg-white/5 border border-blue-100 dark:border-blue-900/30 backdrop-blur-sm rounded-full shadow-sm">
-                        <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-                        {portfolioData.personalInfo.title}
-                    </div>
-                </motion.div>
+        <section className="min-h-[90vh] flex items-center justify-center relative overflow-hidden py-10 md:py-20">
+            {/* Background elements */}
+            <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none">
+                <div className="absolute top-[10%] left-[5%] w-[300px] h-[300px] bg-blue-500/10 rounded-full blur-[100px]" />
+                <div className="absolute bottom-[10%] right-[10%] w-[400px] h-[400px] bg-cyan-500/10 rounded-full blur-[100px]" />
+            </div>
 
-                <motion.h1
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.1 }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 tracking-tight"
-                >
-                    Bridging <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Languages</span> <br />
-                    <span className="relative inline-block">
-                        Connecting Lives
-                        <svg className="absolute w-full h-3 -bottom-1 left-0 text-blue-500 opacity-30" viewBox="0 0 200 9" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.00025 6.99997C26.5002 2.99997 101 -4.00003 198 2.00003" stroke="currentColor" strokeWidth="3" strokeLinecap="round" /></svg>
-                    </span>
-                </motion.h1>
+            <div className="container px-4 z-10">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-12 lg:gap-24">
 
-                <motion.p
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mb-10 leading-relaxed"
-                >
-                    {portfolioData.personalInfo.bio.split(".")[0]}.
-                </motion.p>
-
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5, delay: 0.3 }}
-                    className="flex flex-col sm:flex-row gap-4"
-                >
-                    <a
-                        href="#contact"
-                        className="group flex items-center gap-2 px-8 py-4 bg-blue-600 text-white rounded-full font-bold shadow-lg shadow-blue-500/25 hover:bg-blue-700 hover:shadow-blue-600/30 transition-all active:scale-95"
+                    {/* AVATAR SECTION - Left Side */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut" }}
+                        className="flex-shrink-0 order-1 md:order-1"
                     >
-                        Get in Touch
-                        <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                    </a>
-                    <a
-                        href={`${BASE_PATH}/resume.pdf`}
-                        className="group flex items-center gap-2 px-8 py-4 bg-white dark:bg-white/5 backdrop-blur-sm border border-gray-200 dark:border-white/10 text-gray-900 dark:text-white rounded-full font-bold hover:bg-gray-50 dark:hover:bg-white/10 transition-all active:scale-95"
+                        <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] md:w-[380px] md:h-[380px] lg:w-[420px] lg:h-[420px]">
+                            {/* Decorative Frame Elements */}
+                            <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-cyan-400 rounded-[2rem] rotate-3 opacity-40 blur-lg animate-pulse" />
+                            <div className="absolute -inset-1 bg-gradient-to-tr from-blue-600 to-cyan-400 rounded-[2.1rem] opacity-20" />
+
+                            {/* Main Image Container */}
+                            <div className="relative w-full h-full bg-white dark:bg-gray-900 rounded-[2rem] p-3 shadow-2xl shadow-blue-900/20 ring-1 ring-white/10 overflow-hidden transform transition-transform hover:scale-[1.01] duration-500">
+                                <img
+                                    src={`${BASE_PATH}/Ammar-P.P1x1-B.jpeg`}
+                                    alt="Ammar Yasser AbdAllah"
+                                    className="w-full h-full object-cover rounded-[1.5rem]"
+                                />
+
+                                {/* Inner Gloss Effect */}
+                                <div className="absolute inset-0 rounded-[1.5rem] ring-1 ring-inset ring-black/10 dark:ring-white/10 pointer-events-none" />
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    {/* TEXT SECTION - Right Side */}
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                        className="text-center md:text-left flex flex-col gap-6 max-w-2xl order-2 md:order-2"
                     >
-                        Download CV
-                        <Download size={18} className="group-hover:translate-y-0.5 transition-transform" />
-                    </a>
-                </motion.div>
+                        {/* Name Block */}
+                        <div className="flex flex-col">
+                            <motion.h2
+                                initial={{ opacity: 0, y: 10 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.3 }}
+                                className="text-2xl sm:text-3xl lg:text-[2.5rem] font-bold text-gray-800 dark:text-gray-100 tracking-wide leading-tight md:ml-1"
+                            >
+                                Ammar Yasser AbdAllah
+                            </motion.h2>
+
+                            <motion.h1
+                                initial={{ opacity: 0, scale: 0.95, y: 10 }}
+                                animate={{ opacity: 1, scale: 1, y: 0 }}
+                                transition={{ delay: 0.4 }}
+                                className="text-[3.5rem] sm:text-[5rem] lg:text-[7.5rem] leading-[0.9] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 tracking-tight"
+                            >
+                                Mohammad
+                            </motion.h1>
+                        </div>
+
+                        {/* Title / Role */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.5 }}
+                            className="bg-blue-50/50 dark:bg-white/5 border border-blue-100 dark:border-white/10 rounded-xl p-4 md:p-5 backdrop-blur-sm"
+                        >
+                            <p className="text-lg md:text-xl font-medium text-blue-900 dark:text-blue-100 leading-relaxed">
+                                {portfolioData.personalInfo.title}
+                            </p>
+                        </motion.div>
+
+                        {/* Motto / Short Bio */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.6 }}
+                            className="space-y-4"
+                        >
+                            <div className="flex items-start gap-3 text-gray-600 dark:text-gray-400">
+                                <Quote className="w-8 h-8 text-blue-400/50 flex-shrink-0 rotate-180" />
+                                <p className="text-lg italic leading-relaxed font-light">
+                                    Bridging Languages, Connecting Lives. A proven impact on profession and society through leadership and health advocacy.
+                                </p>
+                            </div>
+                        </motion.div>
+
+                        {/* Actions */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.7 }}
+                            className="flex flex-row gap-4 pt-4 justify-center md:justify-start"
+                        >
+                            <a
+                                href="#contact"
+                                className="flex items-center gap-2 px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold shadow-lg shadow-blue-600/20 transition-all hover:-translate-y-0.5"
+                            >
+                                Get in Touch
+                                <ArrowRight size={18} />
+                            </a>
+                            <a
+                                href={`${BASE_PATH}/resume.pdf`}
+                                className="flex items-center gap-2 px-8 py-3.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 rounded-xl font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-all hover:-translate-y-0.5"
+                            >
+                                Download CV
+                                <Download size={18} />
+                            </a>
+                        </motion.div>
+                    </motion.div>
+                </div>
             </div>
         </section>
     );
