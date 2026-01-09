@@ -57,7 +57,7 @@ export function Hero() {
                                 initial={{ opacity: 0, y: 10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.3 }}
-                                className="text-2xl sm:text-3xl lg:text-[2.5rem] font-bold text-gray-800 dark:text-gray-100 tracking-wide leading-tight md:ml-1"
+                                className="text-2xl sm:text-3xl lg:text-[2.5rem] font-bold text-gray-800 dark:text-gray-100 tracking-wide leading-tight text-left"
                             >
                                 Ammar Yasser AbdAllah
                             </motion.h2>
@@ -66,7 +66,7 @@ export function Hero() {
                                 initial={{ opacity: 0, scale: 0.95, y: 10 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
                                 transition={{ delay: 0.4 }}
-                                className="text-[3.5rem] sm:text-[5rem] lg:text-[7.5rem] leading-[0.9] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 tracking-tight"
+                                className="text-[3.5rem] sm:text-[5rem] lg:text-[7.5rem] leading-[0.9] font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-700 via-blue-600 to-cyan-500 tracking-tight block w-full -ml-[0.05em] py-2"
                             >
                                 Mohammad
                             </motion.h1>
@@ -77,9 +77,9 @@ export function Hero() {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 0.5 }}
-                            className="bg-blue-50/50 dark:bg-white/5 border border-blue-100 dark:border-white/10 rounded-xl p-4 md:p-5 backdrop-blur-sm"
+                            className="bg-blue-50/50 dark:bg-white/5 border border-blue-100 dark:border-white/10 rounded-xl p-3 md:p-4 backdrop-blur-sm w-full"
                         >
-                            <p className="text-lg md:text-xl font-medium text-blue-900 dark:text-blue-100 leading-relaxed">
+                            <p className="text-xs sm:text-sm md:text-base lg:text-lg font-medium text-blue-900 dark:text-blue-100 leading-relaxed whitespace-nowrap overflow-hidden text-ellipsis w-full text-center md:text-left">
                                 {portfolioData.personalInfo.title}
                             </p>
                         </motion.div>
@@ -99,28 +99,7 @@ export function Hero() {
                             </div>
                         </motion.div>
 
-                        {/* Actions */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.7 }}
-                            className="flex flex-row gap-4 pt-4 justify-center md:justify-start"
-                        >
-                            <a
-                                href="#contact"
-                                className="flex items-center gap-2 px-8 py-3.5 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold shadow-lg shadow-blue-600/20 transition-all hover:-translate-y-0.5"
-                            >
-                                Get in Touch
-                                <ArrowRight size={18} />
-                            </a>
-                            <a
-                                href={`${BASE_PATH}/resume.pdf`}
-                                className="flex items-center gap-2 px-8 py-3.5 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 rounded-xl font-semibold hover:bg-gray-50 dark:hover:bg-gray-700 transition-all hover:-translate-y-0.5"
-                            >
-                                Download CV
-                                <Download size={18} />
-                            </a>
-                        </motion.div>
+
                     </motion.div>
                 </div>
             </div>
