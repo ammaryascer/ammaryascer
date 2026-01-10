@@ -20,17 +20,17 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ammaryascer.github.io/protfolio"),
-  title: "Ammar - Portfolio",
-  description: "(Pharmacist & Dreamer)",
+  title: "Ammar Mohammad | Portfolio",
+  description: "Pharmacist | Medical Interpreter (EN–AR) | Community Health & Equity Advocate",
   openGraph: {
-    title: "Ammar - Portfolio",
-    description: "(Pharmacist & Dreamer)",
+    title: "Ammar Mohammad | Portfolio",
+    description: "Pharmacist | Medical Interpreter (EN–AR) | Community Health & Equity Advocate",
     images: ["/Ammar-P.P1x1-B.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ammar - Portfolio",
-    description: "(Pharmacist & Dreamer)",
+    title: "Ammar Mohammad | Portfolio",
+    description: "Pharmacist | Medical Interpreter (EN–AR) | Community Health & Equity Advocate",
     images: ["/Ammar-P.P1x1-B.jpeg"],
   },
 };
