@@ -24,7 +24,7 @@ export function PublicHealth() {
                     </p>
                 </motion.div>
 
-                <div className="flex flex-col gap-10">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
                     {portfolioData.publicHealth.map((project, index) => (
                         <PublicHealthCard key={index} project={project} index={index} />
                     ))}
@@ -46,8 +46,8 @@ function PublicHealthCard({ project, index }: { project: any, index: number }) {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 overflow-hidden"
+            transition={{ duration: 0.3, delay: index * 0.1 }}
+            className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-gray-100 dark:border-gray-800 overflow-hidden h-fit transition-all duration-300 hover:scale-[1.02] hover:ring-2 hover:ring-blue-500/30 hover:shadow-2xl hover:shadow-blue-500/10"
         >
             {/* 1. Visible Header */}
             <div className="p-6 md:p-8 relative overflow-hidden">
