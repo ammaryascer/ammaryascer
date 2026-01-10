@@ -1,5 +1,6 @@
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
+import { PublicHealth } from "@/components/sections/PublicHealth";
 import { Skills } from "@/components/sections/Skills";
 import { Languages } from "@/components/sections/Languages";
 import { Experience } from "@/components/sections/Experience";
@@ -14,6 +15,7 @@ export default function Home() {
     <div className="flex flex-col gap-0">
       <Hero />
       <About />
+      <PublicHealth />
       <Skills />
       <Languages />
       <Experience />
