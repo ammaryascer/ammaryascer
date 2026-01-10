@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { motion } from "framer-motion";
 import { ThemeToggle } from "./ThemeToggle";
+import { BASE_PATH } from "@/lib/constants";
 
 const navLinks = [
     { name: "About", href: "#about" },
@@ -39,8 +40,15 @@ export function Header() {
             )}
         >
             <div className="container mx-auto px-4 flex justify-between items-center">
-                <Link href="/" className="text-2xl font-bold tracking-tighter">
-                    Ammar
+                <Link href="/" className="flex items-center gap-3">
+                    <div className="relative w-10 h-10 rounded-full overflow-hidden border border-gray-200 dark:border-gray-800 shadow-sm">
+                        <img
+                            src={`${BASE_PATH}/Ammar-P.P1x1-B.jpeg`}
+                            alt="Ammar"
+                            className="w-full h-full object-cover"
+                        />
+                    </div>
+                    <span className="text-xl font-bold tracking-tight">Ammar</span>
                 </Link>
 
                 {/* Desktop Nav */}

@@ -33,6 +33,10 @@ export const metadata: Metadata = {
     description: "Pharmacist | Medical Interpreter (EN–AR) | Community Health & Equity Advocate",
     images: ["/Ammar-P.P1x1-B.jpeg"],
   },
+  icons: {
+    icon: "/Ammar-P.P1x1-B.jpeg",
+    apple: "/Ammar-P.P1x1-B.jpeg",
+  },
 };
 
 export const viewport = {
