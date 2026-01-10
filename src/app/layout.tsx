@@ -25,17 +25,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Ammar Mohammad | Portfolio",
     description: "Pharmacist | Medical Interpreter (EN–AR) | Community Health & Equity Advocate",
-    images: ["/Ammar-P.P1x1-B.jpeg"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Ammar Mohammad | Portfolio",
     description: "Pharmacist | Medical Interpreter (EN–AR) | Community Health & Equity Advocate",
-    images: ["/Ammar-P.P1x1-B.jpeg"],
-  },
-  icons: {
-    icon: "/Ammar-P.P1x1-B.jpeg",
-    apple: "/Ammar-P.P1x1-B.jpeg",
   },
 };
 
